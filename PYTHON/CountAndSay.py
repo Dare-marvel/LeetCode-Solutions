@@ -1,3 +1,5 @@
+# Link to the problem : https://leetcode.com/problems/count-and-say/
+
 class Solution:
     def freqMapper(self, seq):
         # initialize an empty list to store the frequency mapping
