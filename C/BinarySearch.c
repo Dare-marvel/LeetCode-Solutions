@@ -1,4 +1,4 @@
-#include<stdio.h>
+//Link to the problem : https://leetcode.com/problems/binary-search/
 
 int binarySearch(int nums[], int n, int key) {
     int st = 0, end = n - 1, mid = (st + end) / 2;
@@ -15,11 +15,4 @@ int binarySearch(int nums[], int n, int key) {
         mid = (st + end) / 2;
     }
     return -1;
-}
-int main()
-{
-int val[6] = {-1,0,3,5,9,12};
-printf("%d",binarySearch(val,6,9));
-
-return 0;
 }
