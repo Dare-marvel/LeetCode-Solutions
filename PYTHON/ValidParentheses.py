@@ -1,3 +1,5 @@
+# Link to the problem : https://leetcode.com/problems/valid-parentheses/
+
 # define the function `check_parentheses` that takes a string `s` as input
 def check_parentheses(s):
     # define two strings that represent opening and closing parentheses respectively
