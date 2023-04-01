@@ -1,6 +1,8 @@
 # Link : https://leetcode.com/problems/add-two-numbers/description/
 
-# Key Insight : 
+# Key Insight : We add numbers digit by digit with the carry and update it after the addition.
+# Then we check whether one of the lists is exhausted and add the remaining digits of the list to the end of the result list
+# At the end we check that whether a carry is generated and append it to the result list and return the resultant list's head
 
 # Definition for singly-linked list.
 class ListNode:
