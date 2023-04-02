@@ -56,7 +56,7 @@ class Solution:
         return prev
 
 
-------------------------------------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------------------------------------------------
 # You can use another approach of inserting all the elements after the last node one by one and in the end return the last node
 
 # Code :
