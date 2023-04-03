@@ -1,6 +1,7 @@
 # Link : https://leetcode.com/problems/integer-to-english-words/description/
 
-# Key Insight :1) Create chunks of 3 numbers each starting from the unit's place of the number
+# Key Insights :
+# 1) Create chunks of 3 numbers each starting from the unit's place of the number
 # 2) Convert each of these chunks to the english words in the form of hundreds
 # 3) In the main function , start from place of 0 and then increase the place value by one 
 # 4) The place value helps us in putting the strings Thousands , Millions and Billions to their right place
@@ -25,7 +26,7 @@ class Solution:
             if num % 100 == 0:
                 res += self.below_20[num // 100] +' '+ 'Hundred'
             # If the number is not a multiple of 100, add both the hundreds and tens places to the string value.
-                        else:
+            else:
                 res += self.below_20[num // 100] +' '+ 'Hundred '
         # If the number's tens place is greater than or equal to 20, add its tens place to the string value.
         if num % 100 >= 20:
@@ -60,4 +61,3 @@ class Solution:
             place += 1
         # Return the final string value, removing any trailing whitespace characters.
         return result.rstrip()
-
