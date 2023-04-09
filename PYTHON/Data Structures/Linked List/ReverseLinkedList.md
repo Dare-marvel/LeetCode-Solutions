@@ -4,35 +4,35 @@
 We use three pointer approach to keep track of the previous node , current node and the next node<br> 
 For e.g. consider Linked list : 1 -> 2 -> 3 -> 4 -> 5 -> None<br>
 
-Step 1:
-     1 -> None | 2 -> 3 -> 4 -> 5 -> None
-     ^           ^    ^
-     |           |    |
-    prev       curr  next
+##### Step 1:
+     1 -> None | 2 -> 3 -> 4 -> 5 -> None<br>
+     ^           ^    ^<br>
+     |           |    |<br>
+    prev       curr  next<br>
 
-Step 2:
-     2 -> 1 -> None |   3 -> 4 -> 5 -> None
-     ^                  ^    ^
-     |                  |    |
-    prev              curr  next
+##### Step 2:<br>
+     2 -> 1 -> None |   3 -> 4 -> 5 -> None<br>
+     ^                  ^    ^<br>
+     |                  |    |<br>
+    prev              curr  next<br>
 
-Step 3:
-     3 -> 2 -> 1 -> None | 4 -> 5 -> None
-     ^                     ^    ^
-     |                     |    |
-    prev                 curr  next
+##### Step 3:
+     3 -> 2 -> 1 -> None | 4 -> 5 -> None<br>
+     ^                     ^    ^<br>
+     |                     |    |<br>
+    prev                 curr  next<br>
 
-Step 4:
-     4 -> 3 -> 2 -> 1 -> None |  5 -> None
-     ^                           ^    ^
-     |                           |    |
-    prev                       curr  next
+##### Step 4:
+     4 -> 3 -> 2 -> 1 -> None |  5 -> None<br>
+     ^                           ^    ^<br>
+     |                           |    |<br>
+    prev                       curr  next<br>
 
-Step 5: (As current is None we break out of loop)
-     5 -> 4 -> 3 -> 2 -> 1 -> None |  None 
-     ^                                 ^      
-     |                                 |      
-    prev                              curr 
+##### Step 5: (As current is None we break out of loop)
+     5 -> 4 -> 3 -> 2 -> 1 -> None |  None <br>
+     ^                                 ^ <br>     
+     |                                 | <br>     
+    prev                              curr<br>
 
 ## Code : 
 #### Optimized Solution
