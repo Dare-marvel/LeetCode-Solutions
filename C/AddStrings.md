@@ -1,11 +1,13 @@
-// Link : https://leetcode.com/problems/add-strings/description/
+[Add Strings](https://leetcode.com/problems/add-strings/description/)
 
-// Key Insight : We add numbers digit by digit with the carry and update it after the addition.
-// Then we check whether one of the strings is exhausted and add the remaining digits of the string
-// At the end we check that whether a carry is generated and then put it at it's appropriate position
+## Key Insights : 
+We add numbers digit by digit with the carry and update it after the addition.
+Then we check whether one of the strings is exhausted and add the remaining digits of the string
+At the end we check that whether a carry is generated and then put it at it's appropriate position
 
 
-// Code : 
+## Code :
+```c
 char *addStrings(char *num1, char *num2)
 {
     // Calculate length of input strings
@@ -66,3 +68,4 @@ char *addStrings(char *num1, char *num2)
     // Return a pointer to the first non-zero character in the result string
     return &res[i];
 }
+```
