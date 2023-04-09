@@ -1,9 +1,11 @@
-// Link : https://leetcode.com/problems/multiply-strings/description/
+### [Multiply Strings](https://leetcode.com/problems/multiply-strings/description/)
 
-// Key Insights :
-// We initialize k at every iteration of i as k = res_size - (n2 - i) because we want to move backwards as per the place value of the 
-// multiplier 
+## Key Insights :
+We initialize k at every iteration of i as k = res_size - (n2 - i) because we want to move backwards as per the place value of the<br> 
+multiplier<br> 
 
+## Code:
+```c
 // This function multiplies two numbers represented as strings
 // and returns the result as a string
 char *multiply(char *num1, char *num2)
@@ -62,6 +64,6 @@ char *multiply(char *num1, char *num2)
     //Return from the first non-zero digit
     return &res[i];
 }
-
+```
 
   
