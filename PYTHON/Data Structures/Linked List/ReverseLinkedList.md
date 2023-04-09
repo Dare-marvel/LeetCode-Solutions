@@ -5,34 +5,34 @@ We use three pointer approach to keep track of the previous node , current node 
 For e.g. consider Linked list : 1 -> 2 -> 3 -> 4 -> 5 -> None<br>
 
 ##### Step 1:
-     1 -> None | 2 -> 3 -> 4 -> 5 -> None<br>
-     ^           ^    ^<br>
-     |           |    |<br>
-    prev       curr  next<br>
+     1 -> None | 2 -> 3 -> 4 -> 5 -> None
+     ^           ^    ^
+     |           |    |
+    prev       curr  next
 
 ##### Step 2:<br>
-     2 -> 1 -> None |   3 -> 4 -> 5 -> None<br>
-     ^                  ^    ^<br>
-     |                  |    |<br>
-    prev              curr  next<br>
+     2 -> 1 -> None |   3 -> 4 -> 5 -> None
+     ^                  ^    ^
+     |                  |    |
+    prev              curr  next
 
 ##### Step 3:
-     3 -> 2 -> 1 -> None | 4 -> 5 -> None<br>
-     ^                     ^    ^<br>
-     |                     |    |<br>
-    prev                 curr  next<br>
+     3 -> 2 -> 1 -> None | 4 -> 5 -> None
+     ^                     ^    ^
+     |                     |    |
+    prev                 curr  next
 
 ##### Step 4:
-     4 -> 3 -> 2 -> 1 -> None |  5 -> None<br>
-     ^                           ^    ^<br>
-     |                           |    |<br>
-    prev                       curr  next<br>
+     4 -> 3 -> 2 -> 1 -> None |  5 -> None
+     ^                           ^    ^
+     |                           |    |
+    prev                       curr  next
 
 ##### Step 5: (As current is None we break out of loop)
-     5 -> 4 -> 3 -> 2 -> 1 -> None |  None <br>
-     ^                                 ^ <br>     
-     |                                 | <br>     
-    prev                              curr<br>
+     5 -> 4 -> 3 -> 2 -> 1 -> None |  None
+     ^                                 ^   
+     |                                 |   
+    prev                              curr
 
 ## Code : 
 #### Optimized Solution
