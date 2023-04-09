@@ -1,7 +1,9 @@
-// Link to the problem : https://leetcode.com/problems/roman-to-integer/
+## [Roman To Integer](https://leetcode.com/problems/roman-to-integer/)
 
-// Method - 1  (Not accepted by Leetcode but logically correct)
-// function to find index of a character in the roman numeral string
+## Code :
+#### Method - 1  (Not accepted by Leetcode but logically correct)
+```c
+//function to find index of a character in the roman numeral string
 int indexOf(char s){
     char rom[7] = "IVXLCDM";  // roman numeral string
     for(int i=0;i<strlen(rom);i++){  // loop through the string
@@ -30,8 +32,10 @@ int romanToInt(char * s){
     }
     return sum;  // return the final sum
 }
-
-//Method - 2 (Accepted by Leetcode)
+```
+-------------------------------------------------------------------------------------------------------------------------------------------
+#### Method - 2 (Accepted by Leetcode)
+```c
 int romanToInt(char *s) {
     // Create an array of integer values corresponding to each Roman numeral.
     // The value at index i corresponds to the Roman numeral (char) i+'A'.
@@ -68,3 +72,4 @@ int romanToInt(char *s) {
     // Return the final result.
     return result;
 }
+```c
