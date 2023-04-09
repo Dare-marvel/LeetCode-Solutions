@@ -1,4 +1,4 @@
-##[3 Sum](https://leetcode.com/problems/3sum/description/)
+## [3 Sum](https://leetcode.com/problems/3sum/description/)
 
 ## Code :
 #### Brute force approach : Exceeding time limit
