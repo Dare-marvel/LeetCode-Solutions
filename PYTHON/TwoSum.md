@@ -2,8 +2,8 @@
 
 # Key Insight :
 Use a dictionary to store the indices of each element in the input list,<br>
-and then iterate over the list to check if the complement of each element is already in the dictionary . If the complement is found<br> 
-return the indices<br> 
+and then iterate over the list to check if the complement of each element is already in the dictionary .<br> 
+If the complement is found return the indices<br> 
 
 #### Optimal Solution
 ```python
