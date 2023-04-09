@@ -1,8 +1,8 @@
 ### [First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
 
 ## Key Insight : 
-Remove the non-positive integers and then loop over the dictionary from 1 upto a number greater than the maximum of the dictionary and<br> 
-return the element which is not present<br>
+Remove the non-positive integers and then loop over the dictionary from 1 upto a number greater than the maximum of the dictionary<br> 
+and return the element which is not present<br>
 If a question arises in your mind that, why have we used a dictionary instead of looping of over the list which would also have been <br>
 the same , then the answer to it is.....<br>
 When we search for an element in a dictionary in python the time-complexity is O(1) , so we speed up the code<br> 
