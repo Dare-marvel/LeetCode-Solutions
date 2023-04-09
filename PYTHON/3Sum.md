@@ -1,6 +1,8 @@
-# Link to the problem : https://leetcode.com/problems/3sum/description/
+##[3 Sum](https://leetcode.com/problems/3sum/description/)
 
-# Brute force approach : Exceeding time limit
+## Code :
+#### Brute force approach : Exceeding time limit
+```python
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         # create an empty list to store solutions
@@ -23,12 +25,15 @@ class Solution:
         unique_solutions = set(map(lambda x: tuple(sorted(x)), solution_list))
         # convert the set of tuples back to a list of lists
         return list(map(list, unique_solutions)))
+```
 
-# Key Insight : iterate through the sorted array and for each element,
-# we use two pointers to find the other two elements that can form a triplet whose sum is equal to zero. 
-# We can set one pointer at the next element after the current element and the other pointer at the end of the array. 
+## Key Insight : 
+Iterate through the sorted array and for each element,<br>
+we use two pointers to find the other two elements that can form a triplet whose sum is equal to zero.<br> 
+We can set one pointer at the next element after the current element and the other pointer at the end of the array.<br> 
 
-# Optimal Solution using two pointer approach:
+#### Optimal Solution using two pointer approach:
+```python
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         # create an empty list to store the solutions
@@ -68,3 +73,4 @@ class Solution:
                     rt-=1
         # return the result list
         return result
+```
