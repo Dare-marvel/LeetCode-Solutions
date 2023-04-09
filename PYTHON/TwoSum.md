@@ -1,11 +1,12 @@
-# Link : https://leetcode.com/problems/two-sum/description/
+### [Two Sum](https://leetcode.com/problems/two-sum/description/)
 
 # Key Insight :
-# use a dictionary to store the indices of each element in the input list,
-# and then iterate over the list to check if the complement of each element is already in the dictionary . If the complement is found 
-# return the indices 
+Use a dictionary to store the indices of each element in the input list,<br>
+and then iterate over the list to check if the complement of each element is already in the dictionary . If the complement is found<br> 
+return the indices<br> 
 
-# Optimal Solution
+#### Optimal Solution
+```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         # Create an empty dictionary to store the indices of each element in the input list
@@ -26,10 +27,11 @@ class Solution:
         
         # If no pair is found, return an empty list.
         return []
-# ------------------------------------------------------------------------------------------------------------------------------------------- 
+ ```
+------------------------------------------------------------------------------------------------------------------------------------------- 
 
-
-# Working but not a optimal solution
+#### Working but not a optimal solution
+```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         # Sort the input list of numbers
@@ -55,3 +57,4 @@ class Solution:
             # If the sum of the left and right pointers is less than the target, move the left pointer rightward
             else:
                 left +=1
+```
