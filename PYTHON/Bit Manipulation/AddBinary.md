@@ -1,8 +1,8 @@
 ### [Add Binary](https://leetcode.com/problems/add-binary/description/)
 
 ## Key Insight : 
-#### Bit-wise AND Truth Table :
- a   b   a & b
+### Bit-wise AND Truth Table :
+#### a   b   a & b
  0   0     0
  0   1     0
  1   0     0
@@ -10,7 +10,7 @@
 
 
 #### Bit-wise XOR Truth Table :
- a   b   a ^ b
+#### a   b   a ^ b
  0   0     0
  0   1     1
  1   0     1
