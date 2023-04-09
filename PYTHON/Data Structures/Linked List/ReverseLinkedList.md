@@ -10,7 +10,7 @@ For e.g. consider Linked list : 1 -> 2 -> 3 -> 4 -> 5 -> None<br>
      |           |    |
     prev       curr  next
 
-##### Step 2:<br>
+##### Step 2:
      2 -> 1 -> None |   3 -> 4 -> 5 -> None
      ^                  ^    ^
      |                  |    |
