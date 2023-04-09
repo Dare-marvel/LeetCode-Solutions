@@ -1,11 +1,13 @@
-# Link : https://leetcode.com/problems/integer-to-english-words/description/
+### [Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/)
 
-# Key Insights :
-# 1) Create chunks of 3 numbers each starting from the unit's place of the number
-# 2) Convert each of these chunks to the english words in the form of hundreds
-# 3) In the main function , start from place of 0 and then increase the place value by one 
-# 4) The place value helps us in putting the strings Thousands , Millions and Billions to their right place
+## Key Insights :
+1) Create chunks of 3 numbers each starting from the unit's place of the number<br>
+2) Convert each of these chunks to the english words in the form of hundreds<br>
+3) In the main function , start from place of 0 and then increase the place value by one<br> 
+4) The place value helps us in putting the strings Thousands , Millions and Billions to their right place<br>
 
+## Code :
+```python
 class Solution:
     def __init__(self):
         # Define three arrays to hold the string values of numbers.
@@ -61,3 +63,4 @@ class Solution:
             place += 1
         # Return the final string value, removing any trailing whitespace characters.
         return result.rstrip()
+```
