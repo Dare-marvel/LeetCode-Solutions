@@ -1,5 +1,7 @@
-// Link to the problem : https://leetcode.com/problems/merge-two-sorted-lists/
+### [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 
+## Code :
+```c
 struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
     // Create a dummy node as the head of the merged list.
     struct ListNode dummy = {0, NULL};
@@ -29,3 +31,4 @@ struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
     // Return the head of the merged list (i.e., the next node after the dummy node).
     return dummy.next;
 }
+```
