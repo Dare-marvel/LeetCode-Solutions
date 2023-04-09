@@ -1,26 +1,27 @@
-# Key Insight : 
-#Repeatedly subtract the divisor from the dividend until the dividend becomes less than the divisor. At each iteration, 
-# we double the divisor and quotient until the doubled divisor becomes greater than the dividend.
-# Then, we subtract the temporary divisor and add the temporary quotient to the final quotient. 
+### [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/submissions/923158018/)
 
-# Brief Overview about the left shift operator:
+## Key Insight : 
+Repeatedly subtract the divisor from the dividend until the dividend becomes less than the divisor. At each iteration,<br> 
+we double the divisor and quotient until the doubled divisor becomes greater than the dividend.<br>
+Then, we subtract the temporary divisor and add the temporary quotient to the final quotient.<br> 
 
-# << Operator
+### Brief Overview about the left shift operator:
 
-# When used with integers, it shifts the bits of the left operand to the left by a number of positions specified by the right operand, 
-# and fills the empty positions with zeroes. In other words, 
-# it multiplies the left operand by 2 raised to the power of the right operand.
+#### << Operator
 
-# <<= Operator 
+When used with integers, it shifts the bits of the left operand to the left by a number of positions specified by the right operand,<br> 
+and fills the empty positions with zeroes. In other words,<br> 
+it multiplies the left operand by 2 raised to the power of the right operand.<br>
 
-# It's a combined bitwise left shift and assignment operator.
-# It first performs a bitwise left shift operation on the left operand by the number of positions specified by the right operand
-# and then assigns the result back to the left operand.
+#### <<= Operator 
 
-# Link : https://leetcode.com/problems/divide-two-integers/submissions/923158018/
+It's a combined bitwise left shift and assignment operator.<br>
+It first performs a bitwise left shift operation on the left operand by the number of positions specified by the right operand<br>
+and then assigns the result back to the left operand.<br>
 
-# Code:
 
+## Code:
+```c
 class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
         # Handle edge cases
@@ -44,5 +45,5 @@ class Solution:
             quotient += temp_quotient  # Add the temporary quotient to the quotient
 
         return quotient if positive else -quotient  # Return the quotient with the sign
-
+```
   
