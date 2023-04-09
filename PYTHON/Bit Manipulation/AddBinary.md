@@ -1,20 +1,20 @@
 ### [Add Binary](https://leetcode.com/problems/add-binary/description/)
 
 ## Key Insight : 
-### Bit-wise AND Truth Table :
-#### a   b   a & b
- 0   0     0
- 0   1     0
- 1   0     0
- 1   1     1
+##### Bit-wise AND Truth Table :
+      a   b   a & b
+      0   0     0
+      0   1     0
+      1   0     0
+      1   1     1
 
 
 #### Bit-wise XOR Truth Table :
-#### a   b   a ^ b
- 0   0     0
- 0   1     1
- 1   0     1
- 1   1     0
+      a   b   a ^ b
+      0   0     0
+      0   1     1
+      1   0     1
+      1   1     0
 
 #### From the repective truth table we can infer that Bit-wise `AND` can be used to calculate `SUM` and
 #### Bit-wise `XOR` can be used to calculate `CARRY`
