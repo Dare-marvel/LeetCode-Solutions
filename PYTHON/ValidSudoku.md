@@ -1,3 +1,5 @@
+### [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) 
+
 ## Intuition
 The rowChecker method checks each row in the board by iterating through each element in each row, counting the frequency of each digit, and returning False if any digit appears more than once in a row.
 
