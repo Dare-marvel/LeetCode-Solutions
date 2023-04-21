@@ -1,10 +1,11 @@
-# Link : https://leetcode.com/problems/group-anagrams/description/
+### [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
 
-# Key Insight : 
-# Recognize that anagrams have the same set of characters, even though the order of those characters is different. 
-# So, if we can somehow identify a unique key for each set of characters, we can group all the anagrams together.
+## Key Insight : 
+Recognize that anagrams have the same set of characters, even though the order of those characters is different.<br> 
+So, if we can somehow identify a unique key for each set of characters, we can group all the anagrams together.<br>
 
-# Code:
+## Code:
+```python
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # create an empty dictionary to store groups of anagrams
@@ -24,3 +25,4 @@ class Solution:
         
         # return the values in the dictionary as a list of lists
         return list(groups.values())
+  ```
