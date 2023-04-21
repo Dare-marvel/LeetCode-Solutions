@@ -1,5 +1,7 @@
-# Link to the problem : https://leetcode.com/problems/reverse-integer/
+### [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
+## Code:
+```python
 class Solution:
     def reverse(self, x: int) -> int:
         # Extract the absolute value of the input number.
@@ -23,4 +25,4 @@ class Solution:
         # Otherwise, return the negated reversed number.
         else:
             return rev_num * (-1)
-
+```
