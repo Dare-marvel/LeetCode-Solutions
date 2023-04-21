@@ -5,7 +5,7 @@ The approach taken is to use three nested loops to iterate through all possible 
 
 However, since the problem requires finding unique solutions, the final step is to remove duplicates from the solution list. This is done by converting the solution list to a set of tuples, where each tuple contains the sorted elements of a triplet. Since sets can only contain unique elements, this automatically removes duplicates. Finally, the set of tuples is converted back to a list of lists and returned as the final solution.
 
-### Time Complexity: O(n^3)
+### Time Complexity: O(n<sup>3</sup>)
 
 ## Code :
 #### Brute force approach : Exceeding time limit
