@@ -1,5 +1,7 @@
-# Link to the problem : https://leetcode.com/problems/count-and-say/
+### [Count And Say](https://leetcode.com/problems/count-and-say/)
 
+## Code:
+```python
 class Solution:
     def freqMapper(self, seq):
         # initialize an empty list to store the frequency mapping
@@ -41,3 +43,4 @@ class Solution:
             prevStr = newStr
         # return the final sequence
         return prevStr
+```
