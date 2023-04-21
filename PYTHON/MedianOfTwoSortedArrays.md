@@ -19,30 +19,30 @@ The space complexity of the function is also O(m+n), because it creates a new li
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         # Initialize two iterators for the two arrays
-        leftIt, rightIt = 0, 0
+        list1Iter, list2Iter = 0, 0
         
         # Initialize an empty list to store the merged array
         mergedList = []
         
         # Loop through both arrays until at least one of the iterators reaches the end of its array
-        while leftIt < len(nums1) and rightIt < len(nums2):
+        while list1Iter < len(nums1) and list2Iter < len(nums2):
             # Compare the elements at the current positions of the iterators and add the smaller one to the merged array
-            if nums1[leftIt] >= nums2[rightIt]:
-                mergedList.append(nums2[rightIt])
-                rightIt += 1
+            if nums1[list1Iter] >= nums2[list2Iter]:
+                mergedList.append(nums2[list2Iter])
+                list2Iter += 1
             else:
-                mergedList.append(nums1[leftIt])
-                leftIt += 1
+                mergedList.append(nums1[list1Iter])
+                list1Iter += 1
         
         # If there are any remaining elements in the first array, add them to the merged array
-        while leftIt < len(nums1):
-            mergedList.append(nums1[leftIt])
-            leftIt += 1
+        while list1Iter < len(nums1):
+            mergedList.append(nums1[list1Iter])
+            list1Iter += 1
         
         # If there are any remaining elements in the second array, add them to the merged array
-        while rightIt < len(nums2):
-            mergedList.append(nums2[rightIt])
-            rightIt += 1
+        while list2Iter < len(nums2):
+            mergedList.append(nums2[list2Iter])
+            list2Iter += 1
         
         # Check if the length of the merged array is even or odd
         if len(mergedList) % 2 == 0:
