@@ -5,14 +5,15 @@ The given code implements a solution to find the longest palindromic substring i
 A palindromic substring is a substring that reads the same backward as forward. For example, "racecar" is a palindromic substring.<br>
 
 ## Key Insights:
-The algorithm used in this solution is based on the idea of expanding around the center. The algorithm works as follows:
+The algorithm used in this solution is based on the idea of expanding around the center. The algorithm works as follows:<br>
 
-Initialize an empty string 'LongSub' to hold the longest palindromic substring found so far.
-Determine the length of the input string 's'.
-Initialize a variable 'length' to hold the length of the longest palindromic substring found so far.
-Loop through each character in the input string 's'.
-Check for even length palindromic sequences around the current character. The center of an even length palindromic substring can be two characters. So, we take the current character as the center of the palindromic substring and expand on both sides until the characters do not match. We keep track of the length of the palindromic substring found and update the 'LongSub' variable if the current palindromic substring is longer than the previously found palindromic substring.
-Check for odd length palindromic sequences around the current character. The center of an odd length palindromic substring can be one character. So, we take the current character as the center of the palindromic substring and expand on both sides until the characters do not match. We keep track of the length of the palindromic substring found and update the 'LongSub' variable if the current palindromic substring is longer than the previously found palindromic substring.
+Initialize an empty string 'LongSub' to hold the longest palindromic substring found so far.<br>
+Determine the length of the input string 's'.<br>
+Initialize a variable 'length' to hold the length of the longest palindromic substring found so far.<br>
+Loop through each character in the input string 's'.<br>
+Check for even length palindromic sequences around the current character. The center of an even length palindromic substring can be two characters.<br> 
+So, we take the current character as the center of the palindromic substring and expand on both sides until the characters do not match. We keep track of the length of the palindromic substring found and update the 'LongSub' variable if the current palindromic substring is longer than the previously found palindromic substring.<br>
+Check for odd length palindromic sequences around the current character. The center of an odd length palindromic substring can be one character.<br>So, we take the current character as the center of the palindromic substring and expand on both sides until the characters do not match. We keep track of the length of the palindromic substring found and update the 'LongSub' variable if the current palindromic substring is longer than the previously found palindromic substring.<br>
 Return the longest palindromic substring found.
 
 ## Time and Space Complexity:
