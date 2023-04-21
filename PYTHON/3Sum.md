@@ -1,5 +1,12 @@
 ## [3 Sum](https://leetcode.com/problems/3sum/description/)
 
+## Key Insights:
+The approach taken is to use three nested loops to iterate through all possible combinations of three elements in the array. Then, the sum of each triplet is checked, and if it equals zero, the triplet is added to the solution list.<br>
+
+However, since the problem requires finding unique solutions, the final step is to remove duplicates from the solution list. This is done by converting the solution list to a set of tuples, where each tuple contains the sorted elements of a triplet. Since sets can only contain unique elements, this automatically removes duplicates. Finally, the set of tuples is converted back to a list of lists and returned as the final solution.
+
+### Time Complexity: O(n^3)
+
 ## Code :
 #### Brute force approach : Exceeding time limit
 ```python
@@ -31,6 +38,8 @@ class Solution:
 Iterate through the sorted array and for each element,<br>
 we use two pointers to find the other two elements that can form a triplet whose sum is equal to zero.<br> 
 We can set one pointer at the next element after the current element and the other pointer at the end of the array.<br> 
+
+## Time and Space Complexity:
 
 #### Optimal Solution using two pointer approach:
 ```python
