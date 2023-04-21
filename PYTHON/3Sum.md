@@ -40,6 +40,11 @@ we use two pointers to find the other two elements that can form a triplet whose
 We can set one pointer at the next element after the current element and the other pointer at the end of the array.<br> 
 
 ## Time and Space Complexity:
+`Time Complexity`:
+The time complexity of this solution is O(n^2), where n is the length of the input array. This is because the solution uses a nested loop to iterate through all possible pairs of numbers in the array, and then uses two pointers to search for a third number that completes the triplet.
+
+`Space Complexity`:
+The space complexity of this solution is O(1), as the only extra space used is the result list to store the triplets that sum up to zero. No additional data structures or memory allocations are made, and the input array is sorted in place, so the space used by the algorithm is constant with respect to the size of the input array.
 
 #### Optimal Solution using two pointer approach:
 ```python
