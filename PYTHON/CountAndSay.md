@@ -1,5 +1,17 @@
 ### [Count And Say](https://leetcode.com/problems/count-and-say/)
 
+## Brief Description:
+The Count and Say sequence is a sequence of integers, where each term is created by "saying" the digits of the previous term. To generate a term in the sequence, you start with the first term, which is "1". To generate the second term, you "say" the digits of the first term, which is "one 1", or "11". To generate the third term, you "say" the digits of the second term, which is "two 1s", or "21". And so on.
+
+## Key Insights:
+The code implements the Count and Say sequence problem by first defining two helper functions:
+
+freqMapper(seq): This function takes a sequence of integers as input and returns a frequency mapping of the sequence. The frequency mapping is a list of tuples, where each tuple contains the integer value and the frequency of that integer in the sequence. For example, if the input sequence is [1, 1, 2, 3, 3, 3], the frequency mapping would be [(1, 2), (2, 1), (3, 3)].
+
+IntegCreator(freqlist): This function takes a frequency mapping as input and returns an integer sequence. The integer sequence is created by concatenating the frequency and the integer value for each tuple in the frequency mapping. For example, if the input frequency mapping is [(1, 2), (2, 1), (3, 3)], the integer sequence would be "211311".
+
+The main function, countAndSay(n), generates the nth term of the Count and Say sequence by iterating n-1 times. In each iteration, it generates the frequency mapping of the previous term using the freqMapper function, creates the integer sequence from the frequency mapping using the IntegCreator function, and updates the previous term with the new term. After n-1 iterations, the final term is returned
+
 ## Code:
 ```python
 class Solution:
