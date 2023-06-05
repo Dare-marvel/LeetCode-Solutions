@@ -1,4 +1,4 @@
-### [LinkToProblem](https://leetcode.com/problems/n-queens/description/)
+### [N-Queens](https://leetcode.com/problems/n-queens/description/)
 
 ### [Articles to refer](https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/)
 
