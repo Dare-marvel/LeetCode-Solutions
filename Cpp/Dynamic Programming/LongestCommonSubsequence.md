@@ -2,6 +2,7 @@
 
 ## Method 1 : Tabulated implementation
 <hr>
+
 ## Explanation:
 This code is an implementation of the Longest Common Subsequence (LCS) problem using dynamic programming with an iterative bottom-up approach. Here's a brief explanation of how it works:
 
