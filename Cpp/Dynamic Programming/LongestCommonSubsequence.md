@@ -21,7 +21,7 @@ The time complexity of this code is O(m * n), where m and n are the lengths of t
 The space complexity of this code is also O(m * n) because it uses a 2D matrix `L` of size `(m+1)*(n+1)` to store the intermediate results of the dynamic programming algorithm.
 
 ## Code:
-```
+```cpp
 class Solution {
 public:
     int longestCommonSubsequence(string X, string Y)
