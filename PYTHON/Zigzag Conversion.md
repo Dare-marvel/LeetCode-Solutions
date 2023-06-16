@@ -13,7 +13,7 @@ The code then returns the output string.
 
 ## Time and Space Complexity
 ### `Time Complexity`:
-The time complexity of the convert method is O(n), where n is the length of the input string s.<br>  
+The time complexity of the convert method is O(n), where n is the length of the input string s.
 This is because the method iterates over each character in the input string once.
 
 ### `Space Complexity`:
