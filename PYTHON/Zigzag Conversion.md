@@ -12,11 +12,11 @@ If the current row is not the first or last row, the code also adds the correspo
 The code then returns the output string.
 
 ## Time and Space Complexity
-* `Time Complexity`:
+### `Time Complexity`:
 The time complexity of the convert method is O(n), where n is the length of the input string s.<br>  
 This is because the method iterates over each character in the input string once.
 
-* `Space Complexity`:
+### `Space Complexity`:
 The space complexity of the convert method is also O(n), where n is the length of the input string s.<br> 
 This is because the method creates a result string res that has the same length as the input string.
 
