@@ -1,17 +1,17 @@
 ### [Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
 
 ## Key Insights:
-The code uses two iterators to keep track of the current position in each input list. This approach allows the code to efficiently merge the two lists into a single sorted list without using extra memory.
+- The code uses two iterators to keep track of the current position in each input list. This approach allows the code to efficiently merge the two lists into a single sorted list without using extra memory.
 
-The merged list is built up one element at a time by comparing the current elements at the current positions of the iterators, and adding the smaller one to the merged list. This approach ensures that the merged list is sorted in ascending order.
+- The merged list is built up one element at a time by comparing the current elements at the current positions of the iterators, and adding the smaller one to the merged list. This approach ensures that the merged list is sorted in ascending order.
 
-The code computes the median value of the merged list by checking whether the length of the list is even or odd, and then computing the appropriate value. This approach is straightforward and works well for small to medium-sized input lists.
+- The code computes the median value of the merged list by checking whether the length of the list is even or odd, and then computing the appropriate value. This approach is straightforward and works well for small to medium-sized input lists.
 
 ## Time and Space Complexity:
-* `Time Complexity`
+### `Time Complexity`
 The time complexity of the findMedianSortedArrays function is O(m+n), where m and n are the lengths of the input lists nums1 and nums2. This is because the function loops through both input lists once to merge them into a single list, which takes O(m+n) time. 
 
-* `Space Complexity`
+### `Space Complexity`
 The space complexity of the function is also O(m+n), because it creates a new list to store the merged list. The size of the merged list is equal to the sum of the sizes of the input lists, which is O(m+n). Therefore, the space complexity of the function is O(m+n) as well.
 
 ## Code:
