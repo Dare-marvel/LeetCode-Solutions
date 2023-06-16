@@ -9,19 +9,6 @@ When we search for an element in a dictionary in python the time-complexity is O
 If we had used `not in` operator with a list it would have resulted in a time-complexity of O(n) and the resultant time-complexity of<br> 
 the code would have become O(n^2)<br>
 
-#### Time limit Exceeding :
-```python
-class Solution:
-    def firstMissingPositive(self, nums: List[int]) -> int:
-        # Step 1: Remove non-positive integers from the list
-        nums = [num for num in nums if num > 0]
-        
-        # Step 2: Find the first missing positive integer
-        for i in range(1, len(nums)+2):
-            if i not in nums:
-                return i
- ```
- 
 #### Optimized Solution :
 ```python
 class Solution:
@@ -39,3 +26,18 @@ class Solution:
             if i not in freq:
                 return i
 ```
+
+#### Time limit Exceeding :
+```python
+class Solution:
+    def firstMissingPositive(self, nums: List[int]) -> int:
+        # Step 1: Remove non-positive integers from the list
+        nums = [num for num in nums if num > 0]
+        
+        # Step 2: Find the first missing positive integer
+        for i in range(1, len(nums)+2):
+            if i not in nums:
+                return i
+ ```
+ 
+
