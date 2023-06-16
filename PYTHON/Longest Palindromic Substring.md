@@ -18,10 +18,10 @@ Return the longest palindromic substring found.
 
 ## Time and Space Complexity:
 
-`Time Complexity`:
+### `Time Complexity`:
 The time complexity of this algorithm is O(n^2) because we are expanding around the center of each character in the input string 's'. 
 
-`Space Complexity`:
+### `Space Complexity`:
 The space complexity of this algorithm is O(1) because we are only using constant space to hold the longest palindromic substring found so far.
 
 ## Code:
