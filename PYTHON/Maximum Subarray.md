@@ -4,7 +4,7 @@
 This solution is implemented using Kadane's algorithm
 
 ## Key Insights:
-[Articles to refer](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)
+### [Articles to refer](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)
 
 ## Time and Space Complexity:
 ### `Time Complexity`:
