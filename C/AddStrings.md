@@ -5,6 +5,25 @@ We add numbers digit by digit with the carry and update it after the addition.
 Then we check whether one of the strings is exhausted and add the remaining digits of the string
 At the end we check that whether a carry is generated and then put it at it's appropriate position
 
+## Explanation:
+This code defines a function `addStrings` that takes in two strings `num1` and `num2` representing non-negative integers and returns a string representing their sum. Here's the main logic of the code in points:
+1. The code calculates the length of the input strings `num1` and `num2`.
+2. The code calculates the maximum possible length of the result string as the sum of the lengths of the input strings and allocates memory for it.
+3. The code initializes the result string with '0' characters and sets the last character as a null character.
+4. The code initializes indices for the input strings and the result string, as well as variables to keep track of the current sum and any carry from previous additions.
+5. The code adds corresponding digits from the input strings until one of the strings is exhausted. For each addition, it calculates the current digit and adds it to the result string, and also calculates any carry for the next addition.
+6. If one of the input strings is exhausted, the code adds any remaining digits from the other string to the result string.
+7. If there is any carry left after all digits have been added, it is added to the result string.
+8. The code finds the index of the first non-zero character in the result string.
+9. The code returns a pointer to the first non-zero character in the result string.
+
+Is there anything else you would like to know?
+## Time and Space Compexity:
+### `Time Complexity`:
+The time complexity of this code is O(max(n1, n2)), where n1 is the length of `num1` and n2 is the length of `num2`. This is because each digit in both input strings is processed once.
+
+### `Space Complexity`:
+The space complexity of this code is O(n1 + n2), where n1 is the length of `num1` and n2 is the length of `num2`. This is because memory is allocated for a result string that can have at most n1 + n2 characters.
 
 ## Code :
 ```c
