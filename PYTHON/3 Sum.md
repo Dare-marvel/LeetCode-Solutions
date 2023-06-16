@@ -1,39 +1,5 @@
 ## [3 Sum](https://leetcode.com/problems/3sum/description/)
 
-## Key Insights:
-The approach taken is to use three nested loops to iterate through all possible combinations of three elements in the array. Then, the sum of each triplet is checked, and if it equals zero, the triplet is added to the solution list.<br>
-
-However, since the problem requires finding unique solutions, the final step is to remove duplicates from the solution list. This is done by converting the solution list to a set of tuples, where each tuple contains the sorted elements of a triplet. Since sets can only contain unique elements, this automatically removes duplicates. Finally, the set of tuples is converted back to a list of lists and returned as the final solution.
-
-### Time Complexity: O(n<sup>3</sup>)
-
-## Code :
-#### Brute force approach : Exceeding time limit
-```python
-class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
-        # create an empty list to store solutions
-        solution_list = []
-        # get the length of the array
-        n = len(nums)
-        
-        # iterate through the array
-        for i in range(n):
-            # iterate through the remaining elements in the array
-            for j in range(i+1,n):
-                # iterate through the remaining elements in the array
-                for k in range(j+1,n):
-                    # check if the three numbers sum to zero
-                    if nums[i] + nums[j] + nums[k] == 0:
-                        # if so, add the triplet to the solution list
-                        solution_list.append([nums[i],nums[j],nums[k]])
-        
-        # remove duplicates from the solution list using set
-        unique_solutions = set(map(lambda x: tuple(sorted(x)), solution_list))
-        # convert the set of tuples back to a list of lists
-        return list(map(list, unique_solutions)))
-```
-
 ## Key Insight : 
 Iterate through the sorted array and for each element,<br>
 we use two pointers to find the other two elements that can form a triplet whose sum is equal to zero.<br> 
@@ -87,4 +53,40 @@ class Solution:
                     rt-=1
         # return the result list
         return result
+```
+
+<hr>
+
+## Key Insights:
+The approach taken is to use three nested loops to iterate through all possible combinations of three elements in the array. Then, the sum of each triplet is checked, and if it equals zero, the triplet is added to the solution list.<br>
+
+However, since the problem requires finding unique solutions, the final step is to remove duplicates from the solution list. This is done by converting the solution list to a set of tuples, where each tuple contains the sorted elements of a triplet. Since sets can only contain unique elements, this automatically removes duplicates. Finally, the set of tuples is converted back to a list of lists and returned as the final solution.
+
+### Time Complexity: O(n<sup>3</sup>)
+
+## Code :
+#### Brute force approach : Exceeding time limit
+```python
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        # create an empty list to store solutions
+        solution_list = []
+        # get the length of the array
+        n = len(nums)
+        
+        # iterate through the array
+        for i in range(n):
+            # iterate through the remaining elements in the array
+            for j in range(i+1,n):
+                # iterate through the remaining elements in the array
+                for k in range(j+1,n):
+                    # check if the three numbers sum to zero
+                    if nums[i] + nums[j] + nums[k] == 0:
+                        # if so, add the triplet to the solution list
+                        solution_list.append([nums[i],nums[j],nums[k]])
+        
+        # remove duplicates from the solution list using set
+        unique_solutions = set(map(lambda x: tuple(sorted(x)), solution_list))
+        # convert the set of tuples back to a list of lists
+        return list(map(list, unique_solutions)))
 ```
