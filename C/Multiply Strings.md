@@ -4,6 +4,24 @@
 We initialize k at every iteration of i as k = res_size - (n2 - i) because we want to move backwards as per the place value of the<br> 
 multiplier<br> 
 
+## Explanation:
+This code defines a function `multiply` that takes in two strings `num1` and `num2` representing non-negative integers and returns a string representing their product. Here's the main logic of the code in points:
+1. The code calculates the length of the input strings `num1` and `num2`.
+2. The code calculates the maximum possible length of the result string as the sum of the lengths of the input strings and allocates memory for it.
+3. The code initializes the result string with '0' characters and sets the last character as a null character.
+4. The code performs long multiplication starting from the rightmost digit of `num2`. For each digit in `num2`, it multiplies it with all digits in `num1` and adds the product to the result string.
+5. For each multiplication, the code extracts the digits from the input strings, computes their product along with any carry from previous multiplication and any digit already present in the result string at that position, updates the carry and stores the last digit of the sum in the result string.
+6. If there is any carry left after all digits have been multiplied, it is added to the result string.
+7. The code finds the index of the first non-zero character in the result string.
+8. The code returns a pointer to the first non-zero character in the result string.
+
+## Time and Space Compexity:
+### `Time Complexity`:
+The time complexity of this code is O(n1 * n2), where n1 is the length of `num1` and n2 is the length of `num2`. This is because for each digit in `num2`, all digits in `num1` are multiplied.
+
+### `Space Complexity`:
+The space complexity of this code is O(n1 + n2), where n1 is the length of `num1` and n2 is the length of `num2`. This is because memory is allocated for a result string that can have at most n1 + n2 characters.
+
 ## Code:
 ```c
 // This function multiplies two numbers represented as strings
