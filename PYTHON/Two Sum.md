@@ -1,5 +1,7 @@
 ### [Two Sum](https://leetcode.com/problems/two-sum/description/)
 
+## Optimal Solution
+
 ## Key Insight :
 Use a dictionary to store the indices of each element in the input list,<br>
 and then iterate over the list to check if the complement of each element is already in the dictionary .<br> 
@@ -20,7 +22,6 @@ The time complexity of this code is O(n), where n is the number of elements in `
 The space complexity of this code is O(n), where n is the number of elements in `nums`. This is because memory is allocated for a dictionary that can have at most n entries.
 
 ## Code:
-#### Optimal Solution
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -60,6 +61,7 @@ The time complexity of this code is O(n log(n)), where n is the number of elemen
 ### `Space Complexity`:
 The space complexity of this code is O(n), where n is the number of elements in `nums`. This is because memory is allocated for a sorted copy of `nums` that can have at most n elements.
 
+## Code:
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
