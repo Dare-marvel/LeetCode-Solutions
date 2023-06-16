@@ -7,10 +7,10 @@ This solution is implemented using Kadane's algorithm
 [Articles to refer](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)
 
 ## Time and Space Complexity:
-`Time Complexity`:
+### `Time Complexity`:
 The time complexity of the above approach is O(n), where n is the length of the input list nums. This is because we are iterating over the entire list exactly once.
 
-`Space Complexity`:
+### `Space Complexity`:
 The space complexity of the above approach is O(1), because we are only using two extra variables (maxSoFar and maxEndHere) to keep track of the maximum subarray sum seen so far and the maximum subarray sum ending at the current index, respectively. We are not using any data structures or arrays that depend on the input size, so the space used is constant.
 
 ## Code:
