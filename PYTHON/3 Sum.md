@@ -56,7 +56,7 @@ class Solution:
 ```
 
 <hr>
-
+### Method 2 - Brute force approach(Exceeding time limit)
 ## Key Insights:
 The approach taken is to use three nested loops to iterate through all possible combinations of three elements in the array. Then, the sum of each triplet is checked, and if it equals zero, the triplet is added to the solution list.<br>
 
@@ -65,7 +65,7 @@ However, since the problem requires finding unique solutions, the final step is 
 ### Time Complexity: O(n<sup>3</sup>)
 
 ## Code :
-#### Brute force approach : Exceeding time limit
+
 ```python
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
