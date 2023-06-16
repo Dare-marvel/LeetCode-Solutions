@@ -6,6 +6,19 @@
 3) In the main function , start from place of 0 and then increase the place value by one<br> 
 4) The place value helps us in putting the strings Thousands , Millions and Billions to their right place<br>
 
+## Explanation:
+This code defines a class `Solution` with two methods: `helper` and `numberToWords`. The `numberToWords` method takes in an integer `num` and returns a string representing its English words. Here's the main logic of the code in points:
+1. The `__init__` method of the class defines three arrays to hold the string values of numbers below 20, the tens places in numbers, and the thousands, millions, and billions places in numbers.
+2. The `helper` method takes in an integer `num` less than 1000 and returns its string value. It checks if `num` is greater than or equal to 100 and adds its hundreds place to the string value if it is. It then checks if `num`'s tens place is greater than or equal to 20 and adds its tens place to the string value if it is. If `num` is less than 20, its string value is added directly to the string value being built.
+3. The `numberToWords` method checks if `num` is 0 and returns "Zero" if it is. It then initializes variables to hold the remaining number to convert and the place value of the current number being converted. It enters a loop that continues until there are no more numbers to convert. In each iteration, it checks if the last three digits of the current number are not 0 and adds their string value and their place value to the final string value if they are not. It then divides the remaining number by 1000 and increases the place value by 1. After all numbers have been converted, it returns the final string value.
+
+## Time and Space Compexity:
+### `Time Complexity`:
+The time complexity of this code is O(log(num)), where num is the input to the `numberToWords` method. This is because each group of three digits in `num` is processed once.
+
+### `Space Complexity`:
+The space complexity of this code is O(log(num)), where num is the input to the `numberToWords` method. This is because memory is allocated for strings representing groups of three digits that can have at most log(num) characters.
+
 ## Code :
 ```python
 class Solution:
