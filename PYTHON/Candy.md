@@ -11,10 +11,10 @@ The approach taken is a two-pass algorithm that uses an array candies to keep tr
 In the second pass, the algorithm assigns candies to each child based on their rating and the rating of their right neighbor. If a child has a higher rating than their right neighbor and has already received fewer candies than their neighbor, they receive additional candies to match their neighbor's count. This ensures that children with higher ratings receive more candies than their neighbors on the right.
 
 ## Time and Space Complexity:
-`Time Complexity`:
+### `Time Complexity`:
 The time complexity of this solution is O(n), where n is the length of the input ratings array, because each child is visited twice at most.
 
-`Space Complexity`:
+### `Space Complexity`:
 The space complexity of this solution is also O(n), as an array of size n is used to store the number of candies assigned to each child.
 
 ## Code:
