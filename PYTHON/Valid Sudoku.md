@@ -12,10 +12,10 @@ This approach can be named as the "Validity Checking Approach" for solving Sudok
 
 
 ## Complexity
-- `Time complexity`:
+### `Time complexity`:
 The time complexity of the approach is `O(N^2)`, where N is the size of the input board. This is because the solution iterates over each cell in the board twice - once for row and column checks, and once for sub-grid checks
 
-- `Space complexity`:
+### `Space complexity`:
 The space complexity of the approach is `O(N)`, where N is the size of the input board. This is because the solution uses a dictionary to store the frequency of each digit in each sub-grid.
 
 ## Code
