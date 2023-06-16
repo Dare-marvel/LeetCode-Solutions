@@ -32,6 +32,7 @@ class Solution:
 ```
 
 <hr>
+
 ## Explanation:
 Checks each and every area 
 
