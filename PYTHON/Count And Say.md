@@ -12,6 +12,20 @@ The code implements the Count and Say sequence problem by first defining two hel
 
 The main function, countAndSay(n), generates the nth term of the Count and Say sequence by iterating n-1 times. In each iteration, it generates the frequency mapping of the previous term using the freqMapper function, creates the integer sequence from the frequency mapping using the IntegCreator function, and updates the previous term with the new term. After n-1 iterations, the final term is returned
 
+## Explanation:
+This code defines a class `Solution` with three methods: `freqMapper`, `IntegCreator`, and `countAndSay`. The `countAndSay` method takes in an integer `n` and returns the nth term of the count-and-say sequence. Here's the main logic of the code in points:
+
+1. The `freqMapper` method takes in a string `seq` representing a sequence of digits and returns a list of lists representing the frequency mapping of the digits in the sequence. For each digit in the sequence, it counts its frequency and adds it to the frequency mapping.
+2. The `IntegCreator` method takes in a list of lists `freqlist` representing a frequency mapping and returns a string representing the integer sequence created from the frequency mapping. For each pair of digit and frequency in the frequency mapping, it concatenates them to the integer sequence.
+3. The `countAndSay` method initializes a variable `prevStr` to represent the previous term of the count-and-say sequence as "1". It then enters a loop that iterates n-1 times to generate the nth term of the count-and-say sequence. In each iteration, it generates the frequency mapping for the previous term using the `freqMapper` method, creates the integer sequence from the frequency mapping using the `IntegCreator` method, and updates `prevStr` with the new term. After all iterations have completed, it returns the final term.
+
+## Time and Space Compexity:
+### `Time Complexity`:
+The time complexity of this code is O(n * m), where n is the input to the `countAndSay` method and m is the maximum length of any term in the count-and-say sequence up to n. This is because for each term in the count-and-say sequence up to n, all digits in that term are processed once.
+
+### `Space Complexity`:
+The space complexity of this code is O(m), where m is the maximum length of any term in the count-and-say sequence up to n. This is because memory is allocated for a list representing a frequency mapping that can have at most m/2 elements and for strings representing terms that can have at most m characters.
+
 ## Code:
 ```python
 class Solution:
