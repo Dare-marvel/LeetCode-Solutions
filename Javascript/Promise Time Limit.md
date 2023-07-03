@@ -25,7 +25,9 @@ The space complexity of this code is also O(1) because it uses a constant amount
  * @param {Function} fn - The function to execute with a time limit.
  * @param {number} t - The time limit in milliseconds.
  * @return {Function} A new function that executes the given function with a time limit.
- */
+
+*/
+
 var timeLimit = function (fn, t) {
   // Return a new asynchronous function that takes any number of arguments.
   return async function (...args) {
