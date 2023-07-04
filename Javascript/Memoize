@@ -1,0 +1,54 @@
+### [Memoize](https://leetcode.com/problems/memoize/description/)
+
+## Explanation:
+The main logic of the code can be explained in the following points:
+
+1. The `memoize` function takes an input function `fn` as an argument.
+2. It initializes an empty object `dictionary` to store the results of previous calls to the input function.
+3. The function then returns a new function that wraps the input function.
+4. This new function takes any number of arguments using the rest parameter syntax `...args`.
+5. It converts these arguments to a string and uses it as a key in the `dictionary`.
+6. If this key is already in the `dictionary`, it means that the input function has already been called with these arguments, so the function returns the stored result from the `dictionary`.
+7. Otherwise, it calls the input function with the given arguments and stores the result in the `dictionary` using the key.
+8. Finally, it returns the result.
+
+I hope that helps!
+
+## Time and Space Complexity:
+### `Time Complexity`:
+The time complexity of this code depends on the time complexity of the input function `fn`. If the input function has a time complexity of O(f(n)), where n is the size of its input, then the time complexity of calling the memoized version of this function is O(f(n)) for the first call with a given set of arguments, and O(1) for subsequent calls with the same set of arguments.
+
+### `Space Complexity`:
+The space complexity of this code is O(m), where m is the number of unique sets of arguments that the memoized version of the input function is called with. This is because each unique set of arguments results in a new entry being added to the `dictionary`.
+
+## Code:
+```js
+/**
+ * This function takes a function as input and returns a memoized version of the function.
+ * @param {Function} fn - The input function to be memoized
+ * @return {Function} - A memoized version of the input function
+ */
+function memoize(fn) {
+    // Initialize an empty object to store the results of previous function calls
+    const dictionary = {};
+
+    // Return a new function that wraps the input function
+    return function(...args) {
+        // Convert the arguments to a string to use as a key in the dictionary
+        const key = String(args);
+
+        // If the key is already in the dictionary, return the stored result
+        if(key in dictionary) {
+            return dictionary[key];
+        }
+
+        // Otherwise, call the input function with the given arguments and store the result in the dictionary
+        const result = fn(...args);
+        dictionary[key] = result;
+
+        // Return the result
+        return result;
+    }
+}
+
+```
