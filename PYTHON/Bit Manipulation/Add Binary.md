@@ -19,9 +19,15 @@
 #### From the repective truth table we can infer that Bit-wise `AND` can be used to calculate `SUM` and
 #### Bit-wise `XOR` can be used to calculate `CARRY`
 
+## Explanation
+
+## Time and Space Complexity:
+### `Time Complexity`:
+
+### `Space Complexity`:
 
 ## Code : 
-```c
+```py
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
         # Convert the binary strings to decimal integers using base 2
