@@ -33,10 +33,10 @@ In this example, the string s contains two parentheses: ( and (. The code first 
 
 
 ### Time and Space Complexity:
-### Time Complexity:
+### `Time Complexity:`
 The time complexity of the check_parentheses function is O(n), where n is the length of the input string s. This is because the function iterates over each character in the input string once.
 
-### Space Complexity:
+### `Space Complexity:`
 The space complexity of the check_parentheses function is also O(n), where n is the length of the input string s. This is because in the worst case, all characters in the input string are opening parentheses and are pushed onto the stack, resulting in a stack size of n.
 
 ## Code:
