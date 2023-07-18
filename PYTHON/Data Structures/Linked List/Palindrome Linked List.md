@@ -160,7 +160,7 @@ The time complexity of this solution is O(n), where n is the number of nodes in 
 The space complexity is O(n), as there are n recursive calls on the call stack.
 
 ## Code:
-```
+```py
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
