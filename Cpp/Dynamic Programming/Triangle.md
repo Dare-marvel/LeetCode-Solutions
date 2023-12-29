@@ -37,4 +37,44 @@ public:
 
 ```
 
-## Memoization:
+## Memoization ( All test-cases passed ):
+```cpp
+class Solution {
+public:
+    int computeMinPathSum(int row, int col, vector<vector<int>>& triangle, vector<vector<int>>& dp) {
+        int n = triangle.size();
+
+        // Check if the current path is invalid
+        if (col > row) {
+            return INT_MAX;
+        }
+
+        // Base case: return the value of the current cell
+        if (row == n - 1) {
+            return dp[row][col] = triangle[row][col];
+        }
+
+        if (dp[row][col] != -1) {
+            return dp[row][col];
+        }
+
+        // Recursive case: return the minimum path sum
+        int fromBelow = triangle[row][col] + computeMinPathSum(row + 1, col, triangle, dp);
+        int fromBelowRight = triangle[row][col] + computeMinPathSum(row + 1, col + 1, triangle, dp);
+        
+        return dp[row][col] = min(fromBelow, fromBelowRight);
+    }
+
+    int minimumTotal(vector<vector<int>>& triangle) {
+        int n = triangle.size();
+        vector<vector<int>> dp(n, vector<int>(n, -1));
+        return computeMinPathSum(0, 0, triangle, dp);
+    }
+};
+
+```
+
+## Tabulization:
+```cpp
+
+```
