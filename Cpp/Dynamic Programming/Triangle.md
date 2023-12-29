@@ -51,7 +51,7 @@ public:
 
         // Base case: return the value of the current cell
         if (row == n - 1) {
-            return dp[row][col] = triangle[row][col];
+            return triangle[row][col];
         }
 
         if (dp[row][col] != -1) {
