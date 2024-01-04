@@ -1,5 +1,7 @@
 ### [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
 
+# Part-1 ----> Using 2 Stacks
+
 ## Explanation:
 This C++ code is a solution for the problem of performing a post-order traversal on a binary tree. Here's an explanation of the main logic:
 
@@ -81,4 +83,19 @@ public:
         return postorder;
     }
 };
+```
+
+# Part-2 ----> Using 1 Stacks
+### []()
+
+## Explanation:
+
+## Time and Space Complexity:
+### `Time Complexity`:
+
+### `Space Complexity`:
+
+## Code:
+```
+
 ```
