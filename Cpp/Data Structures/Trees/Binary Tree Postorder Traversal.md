@@ -112,7 +112,7 @@ The time complexity of this code is **O(n)**, where **n** is the number of nodes
 The space complexity is also **O(n)**. In the worst case, if the tree is skewed, the stack can hold all the nodes of the tree. Hence, the space complexity is linear.
 
 ## Code:
-```
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
