@@ -1,6 +1,6 @@
 ### [Coin Change II](https://leetcode.com/problems/coin-change-ii/description/)
 
-## Explanation:
+## [Explanation](https://takeuforward.org/data-structure/coin-change-2-dp-22/):
 1. **Class and Function Structure**: The code is encapsulated within a class named `Solution`. It contains two public functions: `countWaysToMakeChange` and `change`.
 
 2. **Function - countWaysToMakeChange**: This function takes a vector of integers (`arr`), an integer (`n`), and a target sum (`T`) as input. It returns the number of ways to make change for `T` using the coins in `arr`. It uses a dynamic programming (DP) approach to solve the problem.
