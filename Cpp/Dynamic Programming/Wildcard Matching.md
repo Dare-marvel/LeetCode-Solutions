@@ -11,7 +11,7 @@
 ```cpp
 class Solution {
 public:
-    bool isMatchHelp(int i,int j,string &p,string &s,vector<vector<int>> &dp){
+    bool isMatchHelp(int i,int j,string &p,string &s,vector<vector<bool>> &dp){
         if(i<0 && j<0) return true;
         if(i<0 && j>=0) return false;
         if(j<0 && i>=0) {
@@ -36,7 +36,7 @@ public:
     bool isMatch(string s, string p) {
         int n = p.size();
         int m = s.size();
-        vector<vector<int>> dp(n,vector<int>(m,-1));
+        vector<vector<bool>> dp(n,vector<bool>(m,-1));
 
         return isMatchHelp(n-1,m-1,p,s,dp);
     }
