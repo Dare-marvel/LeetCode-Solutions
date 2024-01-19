@@ -1,13 +1,9 @@
 ### [Count Good Numbers](https://leetcode.com/problems/count-good-numbers/description/)
 
 ## Explanation:
-1. **Class Definition**: The class `Solution` contains the solution to the problem.
+[Binary Exponentiation](https://www.geeksforgeeks.org/binary-exponentiation-for-competitive-programming/)
 
-2. **Constants**: The constant `MOD` is defined as `1000000007`. This is a large prime number that is often used as the modulus in problems involving modular arithmetic.
-
-3. **Power Function**: The `power` function calculates `x` raised to the power `y` under modulo `MOD`. It uses a fast exponentiation algorithm, also known as exponentiation by squaring, which allows calculating large powers of a number efficiently.
-
-4. **Count Good Numbers Function**: The `countGoodNumbers` function calculates the count of good numbers of length `n`. It first calculates the count of odd and even indexed digits. Then it calculates the count of good numbers as `(5^even * 4^odd) % MOD`.
+**Count Good Numbers Function**: The `countGoodNumbers` function calculates the count of good numbers of length `n`. It first calculates the count of odd and even indexed digits . A good digit string has five possible digits at each even index and four possible digits at each odd index. Then it calculates the count of good numbers as `(5^even * 4^odd) % MOD`.
 
 ## Time and Space Complexity:
 ### `Time Complexity`:
