@@ -1,11 +1,6 @@
 ### [Cherry Pickup II](https://leetcode.com/problems/cherry-pickup-ii/description/)
 
-## Explanation:
-
-## Time and Space Complexity:
-### `Time Complexity`:
-
-### `Space Complexity`:
+## [Explanation](https://takeuforward.org/data-structure/3-d-dp-ninja-and-his-friends-dp-13/)
 
 ## Tabulization:
 ```cpp
