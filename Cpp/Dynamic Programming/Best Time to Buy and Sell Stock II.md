@@ -1,6 +1,32 @@
 ### [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
 
-## [Explanation]()
+## [Explanation](https://takeuforward.org/data-structure/buy-and-sell-stock-ii-dp-36/)
+
+## Space Optimization:
+```cpp
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        vector<long> ahead(2,0), cur(2,0);
+
+        for(int i=prices.size()-1;i>=0;i--){
+            for(int j=0;j<=1;j++){
+                long profit = 0;
+                if(j) {
+                    profit = max(ahead[0]-prices[i],ahead[1]);
+                }
+                else{
+                    profit = max(ahead[1]+prices[i],ahead[0]);
+                }
+
+                cur[j] = profit;
+            }
+            ahead = cur;
+        }
+        return (int)ahead[1];
+    }
+};
+```
 
 ## Tabulation:
 ```cpp
