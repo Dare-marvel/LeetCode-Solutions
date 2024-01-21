@@ -4,7 +4,28 @@
 
 ## Tabulation:
 ```cpp
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        vector<vector<long>> dp(prices.size()+1,vector<long>(2,0));
 
+        long profit = 0;
+
+        for(int i=prices.size()-1;i>=0;i--){
+            for(int j=0;j<=1;j++){
+                if(j) {
+                    profit = max(dp[i+1][0]-prices[i],dp[i+1][1]);
+                }
+                else{
+                    profit = max(dp[i+1][1]+prices[i],dp[i+1][0]);
+                }
+
+                dp[i][j] = profit;
+            }
+        }
+        return (int)dp[0][1];
+    }
+};
 ```
 
 ## Memoization:
