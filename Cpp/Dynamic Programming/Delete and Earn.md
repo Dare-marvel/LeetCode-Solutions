@@ -5,11 +5,11 @@
 
 2. **Data Structures Used**: The code uses a `vector<int>` to store the input numbers, a `set<int>` to store the unique numbers, and an `unordered_map<int, int>` to store the frequency of each number.
 
-3. **deleteAndEarn Function**: This is the main function that takes the input vector and prepares the data for processing. It populates the frequency map and the set of unique numbers. It then calls the `recur` function with these data structures.
+3. **deleteAndEarn Function**: This is the main function that takes the input vector and prepares the data for processing. It populates the frequency map and the set of unique numbers. It then calls the `deleteEarnHelper` function with these data structures.
 
-4. **recur Function**: This function contains the main logic of the solution. It initializes four variables: `prev2`, `prev1`, `curEarn`, and `temp`. `prev2` and `prev1` are used to keep track of the maximum score that can be obtained by deleting numbers up to the current number, excluding and including the current number respectively. `curEarn` is used to store the current score, and `temp` is used as a temporary variable to swap values.
+4. **deleteEarnHelper Function**: This function contains the main logic of the solution. It initializes four variables: `prev2`, `prev1`, `curEarn`, and `temp`. `prev2` and `prev1` are used to keep track of the maximum score that can be obtained by deleting numbers up to the current number, excluding and including the current number respectively. `curEarn` is used to store the current score, and `temp` is used as a temporary variable to swap values.
 
-5. **Loop in recur Function**: The function then enters a loop that iterates over each unique number in ascending order. For each number, it calculates the current score as the product of the number and its frequency.
+5. **Loop in deleteEarnHelper Function**: The function then enters a loop that iterates over each unique number in ascending order. For each number, it calculates the current score as the product of the number and its frequency.
 
 6. **If-Else Condition in Loop**: If the current number is one more than the previous number (which means they are consecutive), it updates `prev1` to be the maximum of the current score plus `prev2` and the old `prev1`, and updates `prev2` to be the old `prev1`. If the current number is not one more than the previous number, it adds the current score to `prev1` and updates `prev2` to be the old `prev1`.
 
@@ -27,7 +27,7 @@ The space complexity of the code is O(n), where n is the size of the input array
 // Definition of the Solution class
 class Solution {
 public:
-    // Recursive helper function that calculates the maximum points earnable by deleting numbers
+    // deleteEarnHelpersive helper function that calculates the maximum points earnable by deleting numbers
     // Params: vector nums - input vector, set unique - set of unique numbers, unordered_map freq - frequency of each number
     int deleteEarnHelper(vector<int>& nums, set<int> unique, unordered_map<int, int> freq) {
         // Variables to keep track of the points earned in the current and previous two steps
