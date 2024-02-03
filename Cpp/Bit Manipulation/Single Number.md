@@ -17,6 +17,13 @@
 
 8. **Return Statement**: Finally, the method returns `ans`, which is the single number that appears only once in the vector.
 
+Similarly , if we observe ,
+
+A^A=0
+A^B^A=B
+(A^A^B) = (B^A^A) = (A^B^A) = B This shows that position doesn't matter.
+Similarly , if we see , a^a^a......... (even times)=0 and a^a^a........(odd times)=a
+
 ## Time and Space Complexity:
 ### `Time Complexity`:
 The time complexity of the code is **O(n)**, where **n** is the size of the input vector. This is because the code iterates over each element in the vector exactly once.
