@@ -8,7 +8,7 @@ The code implements the Count and Say sequence problem by first defining two hel
 
 `freqMapper(seq)`: This function takes a sequence of integers as input and returns a frequency mapping of the sequence. The frequency mapping is a list of tuples, where each tuple contains the integer value and the frequency of that integer in the sequence. For example, if the input sequence is [1, 1, 2, 3, 3, 3], the frequency mapping would be [(1, 2), (2, 1), (3, 3)].
 
-`IntegCreator(freqlist)`: This function takes a frequency mapping as input and returns an integer sequence. The integer sequence is created by concatenating the frequency and the integer value for each tuple in the frequency mapping. For example, if the input frequency mapping is [(1, 2), (2, 1), (3, 3)], the integer sequence would be "211311".
+`IntegCreator(freqlist)`: This function takes a frequency mapping as input and returns an integer sequence. The integer sequence is created by concatenating the frequency and the integer value for each tuple in the frequency mapping. For example, if the input frequency mapping is [(1, 2), (2, 1), (3, 3)], the integer sequence would be "211233".
 
 The main function, countAndSay(n), generates the nth term of the Count and Say sequence by iterating n-1 times. In each iteration, it generates the frequency mapping of the previous term using the freqMapper function, creates the integer sequence from the frequency mapping using the IntegCreator function, and updates the previous term with the new term. After n-1 iterations, the final term is returned
 
