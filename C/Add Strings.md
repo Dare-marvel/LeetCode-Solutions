@@ -17,7 +17,6 @@ This code defines a function `addStrings` that takes in two strings `num1` and `
 8. The code finds the index of the first non-zero character in the result string.
 9. The code returns a pointer to the first non-zero character in the result string.
 
-Is there anything else you would like to know?
 ## Time and Space Compexity:
 ### `Time Complexity`:
 The time complexity of this code is O(max(n1, n2)), where n1 is the length of `num1` and n2 is the length of `num2`. This is because each digit in both input strings is processed once.
