@@ -1,6 +1,9 @@
 ### [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/)
 
 ## Approach and Intuition:
+
+**Approach:**
+
 - **Problem Statement**: The problem asks us to find the maximum area rectangle that can be formed in a binary matrix where each cell represents whether it is filled with '1' or not.
   
 - **Approach Overview**: This problem can be solved using the concept of histograms. We can convert each row of the matrix into a histogram, where each bar's height represents the number of consecutive '1's encountered so far in that column.
